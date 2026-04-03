@@ -1,0 +1,198 @@
+import { PantoneStyle } from "./types";
+
+export const PANTONE_STYLES: PantoneStyle[] = [
+  {
+    id: "classic-blue",
+    name: "Classic Blue (19-4052)",
+    primary: "#0F4C81",
+    secondary: "#5B7E91",
+    accent: "#A2B5BB",
+    background: "#F0F4F8",
+    text: "#1A202C",
+    card: "#FFFFFF",
+    border: "#E2E8F0",
+  },
+  {
+    id: "viva-magenta",
+    name: "Viva Magenta (18-1750)",
+    primary: "#BB2649",
+    secondary: "#7E2E40",
+    accent: "#D68C9B",
+    background: "#FFF5F7",
+    text: "#2D3748",
+    card: "#FFFFFF",
+    border: "#FEE2E2",
+  },
+  {
+    id: "illuminating",
+    name: "Illuminating (13-0647)",
+    primary: "#F5DF4D",
+    secondary: "#939597",
+    accent: "#C4C4C4",
+    background: "#F7F7F7",
+    text: "#333333",
+    card: "#FFFFFF",
+    border: "#E5E5E5",
+  },
+  {
+    id: "very-peri",
+    name: "Very Peri (17-3938)",
+    primary: "#6667AB",
+    secondary: "#A2A2D0",
+    accent: "#D1D1E9",
+    background: "#F5F5FB",
+    text: "#1F2937",
+    card: "#FFFFFF",
+    border: "#E5E7EB",
+  },
+  {
+    id: "living-coral",
+    name: "Living Coral (16-1546)",
+    primary: "#FF6F61",
+    secondary: "#FF9E94",
+    accent: "#FFC7C2",
+    background: "#FFF9F8",
+    text: "#4A5568",
+    card: "#FFFFFF",
+    border: "#FED7D7",
+  },
+  {
+    id: "ultra-violet",
+    name: "Ultra Violet (18-3838)",
+    primary: "#5F4B8B",
+    secondary: "#8E7CC3",
+    accent: "#B4A7D6",
+    background: "#F8F7FA",
+    text: "#1A202C",
+    card: "#FFFFFF",
+    border: "#E9E7EF",
+  },
+  {
+    id: "greenery",
+    name: "Greenery (15-0343)",
+    primary: "#88B04B",
+    secondary: "#A9C97A",
+    accent: "#C9E2A9",
+    background: "#F9FBF6",
+    text: "#2D3748",
+    card: "#FFFFFF",
+    border: "#E6EFD8",
+  },
+  {
+    id: "rose-quartz",
+    name: "Rose Quartz (13-1520)",
+    primary: "#F7CAC9",
+    secondary: "#92A8D1",
+    accent: "#B1C1D9",
+    background: "#FDF9F9",
+    text: "#4A5568",
+    card: "#FFFFFF",
+    border: "#F9EBEB",
+  },
+  {
+    id: "marsala",
+    name: "Marsala (18-1438)",
+    primary: "#955251",
+    secondary: "#B18282",
+    accent: "#D1B1B1",
+    background: "#F9F5F5",
+    text: "#2D3748",
+    card: "#FFFFFF",
+    border: "#EFE6E6",
+  },
+  {
+    id: "radiant-orchid",
+    name: "Radiant Orchid (18-3224)",
+    primary: "#B163A3",
+    secondary: "#D19CC5",
+    accent: "#E9C9E1",
+    background: "#FAF6F9",
+    text: "#1A202C",
+    card: "#FFFFFF",
+    border: "#F3E9F1",
+  },
+];
+
+export const DEFAULT_FDA_TEMPLATE = `FDA醫療器材網路安全指引文件
+FDA認為需要透過一套強而有力的網路安全規範，來確保數位醫療器材的安全性及有效性，因此於2022年4月8日公布「醫療器材的網路安全：品質管理系統的相關考量與上市前提交文件內容」(即Cybersecurity in Medical Devices: Quality System Considerations and Content of Premarket Submission)的指引文件，一方面，這個新版本，是為了要取代2018年所發布的舊指引文件，並進一步強化醫療器材設計的安全性(因為在設計開發的最初即做好評估，就可以有效減少「整體產品生命週期」【Total Product Lifecycle】中的網路安全風險)，而另一方面，FDA藉著對此類型產品上市前申請(Premarket Submission)所需提繳的文件內容中有關網路安全的部分做出更清楚說明的方式，以一併解決網路安全性的疑慮。根據觀察，在這份新的指引草案中，有兩大重點，分別為：(一)產品安全開發架構(A Secure Product Development Framework)以及(二)提升「網路安全透明度」(Cybersecurity Transparency)．其中重點包含：
+(一) 產品安全開發架構：
+FDA提供相當完整的架構，使醫療器材製造商可以提供完整的文件供審核，其重點就在於網路安全的風險分析、提供完整的醫療器材連接架構(包含連接網路或是其他醫療器材)以及最後要做的網路安全測試，因此，透過這樣的架構，便可以評估產品開發到上市可能遇到的威脅，然後有效的降低這些危險。
+(二) 提升網路安全透明度：
+提升網路安全透明度則是需要提供可能的網路風險給使用者，使其知道潛在的風險在哪，以及該如何去避免，透過這樣的風險告知，讓使用者在使用醫療器材時可以維持其安全性及有效性。
+ 
+小結
+FDA意識到醫療器材網路安全是整個醫療系統使用者共同的責任，亦即製造商、醫院和相關醫護機構必須共同努力來管理網路安全風險，故在這份新指引中，提供了相當完整的架構，值得醫療器材相關產業的參與者參考。
+
+參考資料
+1. For more information about the “Digital Health”, please refer to this website:
+https://www.fda.gov/medical-devices/digital-health-center-excellence/what-digital-health 
+2. For more information about the “Cybersecurity”, please refer to this website:
+https://www.fda.gov/medical-devices/digital-health-center-excellence/cybersecurity 
+3. For more information about the ”Cybersecurity in Medical Devices: Quality System Considerations and Content of Premarket Submission”, please refer to this website:
+https://www.fda.gov/regulatory-information/search-fda-guidance-documents/cybersecurity-medical-devices-quality-system-considerations
+-and-content-premarket-submissions`;
+
+export const TRANSLATIONS = {
+  en: {
+    title: "Artistic MDRI Flow",
+    dashboard: "Dashboard",
+    agents: "Agent Studio",
+    mdri: "MDRI Module",
+    settings: "Settings",
+    theme: "Theme",
+    language: "Language",
+    style: "Style",
+    light: "Light",
+    dark: "Dark",
+    english: "English",
+    chinese: "Traditional Chinese",
+    run: "Run Agent",
+    running: "Running...",
+    approve: "Approve & Next",
+    download: "Download",
+    logs: "Live Logs",
+    artifacts: "Artifacts",
+    input: "Input Regulation Text",
+    template: "Report Template",
+    step1: "Web Research & Summary",
+    step2: "Comprehensive Report",
+    step3: "Skill.md Generation",
+    welcome: "Welcome to MDRI Intelligence",
+    stats: "System Telemetry",
+    activeJobs: "Active Jobs",
+    tokenUsage: "Token Usage",
+    latency: "Avg Latency",
+    providerHealth: "Provider Health",
+  },
+  zh: {
+    title: "藝文代理流動系統 (MDRI)",
+    dashboard: "儀表板",
+    agents: "代理工作室",
+    mdri: "MDRI 模組",
+    settings: "設定",
+    theme: "主題",
+    language: "語言",
+    style: "風格",
+    light: "淺色",
+    dark: "深色",
+    english: "英文",
+    chinese: "繁體中文",
+    run: "執行代理",
+    running: "執行中...",
+    approve: "核准並下一步",
+    download: "下載",
+    logs: "即時日誌",
+    artifacts: "產出物",
+    input: "輸入法規文本",
+    template: "報告模板",
+    step1: "網路檢索與摘要",
+    step2: "全面性法規報告",
+    step3: "Skill.md 生成",
+    welcome: "歡迎使用 MDRI 智慧系統",
+    stats: "系統遙測",
+    activeJobs: "活動任務",
+    tokenUsage: "代幣使用量",
+    latency: "平均延遲",
+    providerHealth: "服務健康度",
+  },
+};
